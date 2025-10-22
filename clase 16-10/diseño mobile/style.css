@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+body {
+  background: #111;
+  color: white;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; 
+}
+
+header {
+  background: #001f3f;
+  flex: 1;
+}
+
+nav {
+  background: #ff4136;
+  flex: 1;
+}
+
+.hero {
+  background: #0074d9;
+  flex: 2;
+}
+
+main {
+  background: #001f3f;
+  flex: 2;
+}
+
+.banner {
+  background: #ffdc00;
+  color: black;
+  flex: 1;
+}
+
+.extra {
+  background: #2ecc40;
+  flex: 1;
+}
+
+.image {
+  background: #7fdbff;
+  color: black;
+  flex: 1;
+}
