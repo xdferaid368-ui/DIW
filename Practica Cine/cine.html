@@ -15,7 +15,7 @@
             <nav>
                 <ul>
                 <li><a href="#cartelera">Cartelera</a></li>
-                <li><a href="#" id="mapa-btn">¿Dónde estamos?</a></li>
+                <li><a href="/Practica Cine/mapa.html   " id="mapa-btn">¿Dónde estamos?</a></li>
                 <li><a href="#contacto">Contacto</a></li>
                 </ul>
             </nav>
@@ -23,7 +23,7 @@
         </header>
 
         <section class="hero">  
-            <h2>Amor de Colegas</h2>
+            <h1>AMOR DE COLEGAS</h1>
             <p>La llama siempre ha estado encendida dentro nuestra</p>
             <div class="buttons">
                 <button class="btn">Comprar entradas</button>
@@ -57,11 +57,6 @@
             </div>
         </section>
 
-        <section id="mapa">
-            <h3>¿Dónde estamos?</h3>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3171.9052287738613!2d-5.920925784700635!3d37.2836739798495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd126f5f514bbf13%3A0x4e4e48a2490a8f77!2sCine%20Dos%20Hermanas!5e0!3m2!1ses!2ses!4v1682179087632" allowfullscreen></iframe>
-        </section>
-
         <footer id="contacto">
             <div class="social">
                 <i class="fa-brands fa-facebook"></i>
@@ -71,16 +66,6 @@
             <p>📍 Avenida de europa, 2, Dos Hermanas, Sevilla</p>
             <p>📞 954 123 456 | ✉️ info@cineestelar.com</p>
         </footer>
-        <script>
-        document.getElementById('mapa-btn').addEventListener('click', (e) => {
-            e.preventDefault();
-            const mapa = document.getElementById('mapa');
-            mapa.classList.toggle('mostrar');
-            if (mapa.classList.contains('mostrar')) {
-            window.scrollTo({ top: mapa.offsetTop, behavior: 'smooth' });
-            }
-        });
-        </script>
     </body>
     
 </html>

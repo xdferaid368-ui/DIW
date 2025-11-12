@@ -6,18 +6,23 @@ align-items: center;
 justify-content: center;
 text-align: center;
 padding: 6rem 1rem;
-color: red;
+color: rgb(207, 38, 38);
+height: 350px;
+font-size: larger;
 }
 body {
 margin: 0;
 font-family: 'Open Sans', sans-serif;
 background-color: var(--color-bg);
 color: var(--color-text);
+height: 100vh;
 }
+
 h1, h2, h3, h4 {
 font-family: 'Montserrat', sans-serif;
 margin: 0;
 }
+
 header {
 display: flex;
 justify-content: space-between;
@@ -49,17 +54,19 @@ nav a:hover {
 color: var(--color-accent);
 }
 
-.btn-entradas {
+.btn {
 background-color: var(--color-accent);
 color: #000;
 padding: 0.6rem 1.2rem;
-border-radius: 8px;
+border-radius: 25px;
 text-decoration: none;
 font-weight: bold;
 transition: background-color 0.3s;
+border: solid, #ffd633, 10xºpx;
 }
 
-.btn-entradas:hover {
+
+.btn{
 background-color: #ffd633;
 }
 
@@ -83,6 +90,8 @@ gap: 1.5rem;
 background-color: var(--color-sec);
 border-radius: 10px;
 overflow: hidden;
+border: solid, #ffd633, 15px;
+background-color: #ffd633;
 }
 
 .pelicula:hover {
@@ -91,28 +100,13 @@ transform: scale(1.05);
 
 .pelicula img {
   width: 100%;
-  height: 250px;
+  height: 400px;
   object-fit: cover;
 }
 
 .pelicula h4 {
   margin: 0.8rem 0 1.2rem;
-}
-#mapa {
-  display: none;
-  padding: 2rem;
-  text-align: center;
-}
-
-#mapa h3 {
-  margin-bottom: 1.5rem;
-}
-
-#mapa iframe {
-  width: 100%;
-  height: 400px;
-  border: none;
-  border-radius: 10px;
+  font-size: 30px;
 }
 
 footer {
@@ -120,6 +114,7 @@ footer {
   text-align: center;
   padding: 2rem 1rem;
   margin-top: 2rem;
+  height: 100%;
 }
 
 footer .social {
@@ -129,11 +124,6 @@ footer .social {
   margin-bottom: 1rem;
 }
 
-footer a img {
-  width: 30px;
-  filter: brightness(0) invert(1);
-  transition: transform 0.3s;
-}
 
 footer a img:hover {
   transform: scale(1.2);
