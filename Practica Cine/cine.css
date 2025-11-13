@@ -1,101 +1,96 @@
 .hero {
-background: url('/Practica Cine/imgs/AmorDecolegas.jpeg') no-repeat center/cover;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-text-align: center;
-padding: 6rem 1rem;
-color: rgb(207, 38, 38);
-height: 350px;
-font-size: larger;
+  background: url('/Practica Cine/imgs/AmorDecolegas.jpeg') no-repeat center/cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 6rem 1rem;
+  color: rgb(207, 38, 38);
+  height: 350px;
+  font-size: larger;
 }
+
 body {
-margin: 0;
-font-family: 'Open Sans', sans-serif;
-background-color: var(--color-bg);
-color: var(--color-text);
-height: 100vh;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  height: 100vh;
 }
 
 h1, h2, h3, h4 {
-font-family: 'Montserrat', sans-serif;
-margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
 }
 
 header {
-display: flex;
-justify-content: space-between;
-align-items: center;
-background-color: var(--color-sec);
-padding: 1rem 2rem;
-background-color: #ffd633;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffd633;
+  padding: 1rem 2rem;
 }
 
 header h1 {
-font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 nav ul {
-display: flex;
-list-style: none;
-gap: 1.5rem;
-margin: 0;
-padding: 0;
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
 }
 
 nav a {
-color: var(--color-text);
-text-decoration: none;
-transition: color 0.3s;
+  color: var(--color-text);
+  text-decoration: none;
+  transition: color 0.3s;
 }
 
 nav a:hover {
-color: var(--color-accent);
+  color: var(--color-accent);
 }
 
 .btn {
-background-color: var(--color-accent);
-color: #000;
-padding: 0.6rem 1.2rem;
-border-radius: 25px;
-text-decoration: none;
-font-weight: bold;
-transition: background-color 0.3s;
-border: solid, #ffd633, 10xºpx;
-}
-
-
-.btn{
-background-color: #ffd633;
+  background-color: #ffd633;
+  color: #000;
+  padding: 0.6rem 1.2rem;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  border: solid #ffd633 2px;
 }
 
 #cartelera {
-padding: 3rem 2rem;
-text-align: center;
+  padding: 3rem 2rem;
+  text-align: center;
 }
 
 #cartelera h3 {
-font-size: 2rem;
-margin-bottom: 2rem;
+  font-size: 2rem;
+  margin-bottom: 2rem;
 }
 
 .peliculas {
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-gap: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
 }
 
 .pelicula {
-background-color: var(--color-sec);
-border-radius: 10px;
-overflow: hidden;
-border: solid, #ffd633, 15px;
-background-color: #ffd633;
+  background-color: #ffd633;
+  border-radius: 10px;
+  overflow: hidden;
+  border: solid #ffd633 2px;
+  transition: transform 0.3s;
 }
 
 .pelicula:hover {
-transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .pelicula img {
@@ -114,7 +109,6 @@ footer {
   text-align: center;
   padding: 2rem 1rem;
   margin-top: 2rem;
-  height: 100%;
 }
 
 footer .social {
@@ -124,15 +118,74 @@ footer .social {
   margin-bottom: 1rem;
 }
 
-
-footer a img:hover {
-  transform: scale(1.2);
-}
-
 footer p {
   color: var(--color-subtext);
   margin: 0.3rem 0;
 }
+
+.form-container {
+  max-width: 400px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background-color: #ffd633; /* amarillo principal */
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  font-family: 'Open Sans', sans-serif;
+  color: #000;
+}
+
+.form-container h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: rgb(207, 38, 38);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.25rem;
+}
+
+.form-group label {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.form-group input,
+.form-group select {
+  padding: 0.6rem 1rem;
+  border: 2px solid #c72626; /* rojo */
+  border-radius: 25px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: rgb(207, 38, 38);
+  outline: none;
+}
+
+.btn-pago {
+  width: 100%;
+  background-color: rgb(207, 38, 38);
+  color: #fff;
+  border: none;
+  padding: 0.75rem 0;
+  font-weight: 700;
+  font-size: 1.2rem;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 1rem;
+}
+
+.btn-pago:hover {
+  background-color: #a71e1e;
+}
+
 @media (max-width: 768px) {
   header {
     flex-direction: column;
@@ -154,4 +207,63 @@ footer p {
   footer .social img {
     width: 25px;
   }
+}
+
+.pelicula-detalle {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.pelicula-detalle .contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.pelicula-detalle .info h2 {
+  font-size: 2.5rem;
+  color: #c72626;
+  margin-bottom: 1rem;
+}
+
+.pelicula-detalle .sinopsis {
+  max-width: 800px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #333;
+  text-align: justify;
+}
+
+.pelicula-detalle .trailer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.pelicula-detalle .trailer iframe {
+  width: 80%;
+  max-width: 900px;
+  height: 500px;
+  border-radius: 10px;
+  border: none;
+}
+
+.volver {
+  margin-top: 3rem;
+}
+
+.volver .btn {
+  background-color: #ffd633;
+  color: #000;
+  padding: 0.8rem 1.5rem;
+  border-radius: 25px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: transform 0.2s;
+}
+
+.volver .btn:hover {
+  transform: scale(1.05);
 }

@@ -74,6 +74,79 @@ footer{
 
 
 }
+
+.pelicula-detalle {
+  padding: 3rem 1rem;
+  text-align: center;
+  color: #fff;
+}
+
+.pelicula-detalle .contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.pelicula-detalle h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  color: #f5c518;
+  margin-bottom: 1rem;
+}
+
+.pelicula-detalle .sinopsis {
+  font-size: 1.1rem;
+  color: #ddd;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.trailer iframe {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+
+.volver {
+  margin-top: 2.5rem;
+}
+
+.volver .btn {
+  background-color: #f5c518;
+  color: #111;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.volver .btn:hover {
+  background-color: #e0b312;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .pelicula-detalle .contenedor {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .pelicula-detalle .info {
+    flex: 1;
+    padding-right: 2rem;
+  }
+
+  .pelicula-detalle .trailer {
+    flex: 1;
+  }
+}
+
 @media (max-width: 600px) { 
     .contenedor {
         grid-template-columns: 1fr; 
