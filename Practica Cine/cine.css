@@ -321,3 +321,58 @@ footer p {
         "p7";
   }
 }
+
+.hero-panels {
+  display: flex;
+  width: 100%;
+  height: 670px; 
+  overflow: hidden;
+}
+
+.hero-panels .panel {
+  flex: 1; 
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  position: relative;
+  transition: flex 0.5s ease, transform 0.5s ease;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.hero-panels .panel h2 {
+  margin-bottom: 1.5rem;
+  background: rgba(0,0,0,0.5);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+}
+
+.hero-panels .panel:hover {
+  flex: 3;
+  transform: scale(1.05);
+}
+
+.hero-panels .panel:not(:hover) {
+  flex: 1; 
+}
+
+.hero-panels .panel {
+  transition: flex 0.5s ease, transform 0.5s ease;
+}
+
+@media (max-width: 768px) {
+  .hero-panels {
+    flex-direction: column;
+    height: auto;
+  }
+  .hero-panels .panel {
+    height: 200px;
+  }
+  .hero-panels .panel:hover {
+    flex: unset;
+    transform: scale(1);
+  }
+}
