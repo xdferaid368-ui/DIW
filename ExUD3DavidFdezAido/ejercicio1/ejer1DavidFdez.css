@@ -1,0 +1,33 @@
+:root{
+    --left-width:50px;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html,body{
+    height:100%;
+}
+
+#contenedor{
+    display:grid;
+    grid-template-columns: var(--left-width) 1fr;
+    height:100vh;
+    transition: grid-template-columns 0.5s ease;
+
+}
+
+#left{
+    background:palevioletred;
+}
+
+#right{
+    background:cadetblue;
+}
+
+#contenedor:has(#left:hover){
+    --left-width:40%;
+}
