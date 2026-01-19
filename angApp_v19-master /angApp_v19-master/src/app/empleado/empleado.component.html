@@ -1,0 +1,12 @@
+<h1>Titulo: {{ title }}</h1>
+
+<h2>Lista De empleados:</h2>
+
+<ul>
+  <li *ngFor="let empleado of empleados">
+    <strong>Nombre:</strong> {{ empleado.nombre }} {{ empleado.apellidos }} <br>
+    <strong>Edad:</strong> {{ empleado.edad }}<br>
+    <strong>Cargo:</strong> {{ empleado.cargo }}<br>
+    <strong>Tiene Contrato?:</strong> {{ empleado.contratado }}<br><br>
+  </li>
+</ul>
