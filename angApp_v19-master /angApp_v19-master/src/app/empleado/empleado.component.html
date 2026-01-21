@@ -1,12 +1,28 @@
-<h1>Titulo: {{ title }}</h1>
+<p>{{title}}</p>
 
-<h2>Lista De empleados:</h2>
-
+<strong>Empleado estrella: </strong>
 <ul>
-  <li *ngFor="let empleado of empleados">
-    <strong>Nombre:</strong> {{ empleado.nombre }} {{ empleado.apellidos }} <br>
-    <strong>Edad:</strong> {{ empleado.edad }}<br>
-    <strong>Cargo:</strong> {{ empleado.cargo }}<br>
-    <strong>Tiene Contrato?:</strong> {{ empleado.contratado }}<br><br>
-  </li>
+    <li>{{empleado.nombre}}, {{empleado.edad}} años - {{empleado.cargo}}</li>
 </ul>
+
+<strong>Trabajadores</strong>
+<ul>
+    <li>{{trabajadores[0].nombre}}, {{trabajadores[0].edad}} años - {{trabajadores[0].cargo}}</li>
+</ul>
+
+<hr>
+
+<strong>Trabajadores externos e internos</strong>
+<ul>
+    @if (trabajadorExterno){
+        <button (click)="cambiarExterno(false)">Mostrar internos</button>
+        <li>{{empleadoExt.nombre}}, {{empleadoExt.edad}} años - {{empleadoExt.cargo}}</li>
+    }
+    @else{
+        <button (click)="cambiarExterno(true)">Mostrar externos</button>
+        @for (empleado of trabajadores; track empleado.nombre;let index = $index) 
+            {
+                <li>Empleado {{index+1}}; {{empleado.nombre}}</li>
+            }
+    }
+</ul> 
