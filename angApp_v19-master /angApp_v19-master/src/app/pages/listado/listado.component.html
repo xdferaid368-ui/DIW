@@ -1,0 +1,19 @@
+<div class="container mt-4">
+  <h2>Listado de Memes</h2>
+
+  <div *ngIf="loading" class="text-center mt-5">
+    <p>Cargando memes...</p>
+  </div>
+
+  <div class="row">
+    <div *ngFor="let meme of memes" class="col-md-3 mb-4">
+      <div class="card h-100">
+        <img [src]="meme.url" class="card-img-top" [alt]="meme.name">
+        <div class="card-body">
+          <h5 class="card-title">{{ meme.name }}</h5>
+          <a [routerLink]="['/detalle', meme.id]" class="btn btn-primary">Ver detalle</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
